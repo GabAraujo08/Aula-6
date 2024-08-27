@@ -33,6 +33,7 @@ function App() {
         {data && data.abilities && data.abilities.map((x : any) => (
           <p key={x.ability.name}>{x.ability.name}</p>
         ))}
+        <p>Peso: {data && data.weight}</p>
       </div>
     
       <button onClick={() => setCount((count) => count + 1)}>
